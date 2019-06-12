@@ -2,7 +2,7 @@ int serial_speed = 9600;
 int analog_port_x = 0;
 int analog_port_y = 1;
 int analog_port_z = 2;
-int loop_delay_ms = 1000;
+int loop_delay_ms = 100;
 
 void setup() {
   Serial.begin(serial_speed);
@@ -16,7 +16,8 @@ void print_data(long x, long y, long z) {
   Serial.print(", y = ");
   Serial.print(y);
   Serial.print(", z = ");
-  Serial.println(z); // end of line
+  Serial.print(z);
+  Serial.print("\n"); // end of line
 }
 
 void loop() {

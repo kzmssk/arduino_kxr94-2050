@@ -1,0 +1,32 @@
+{
+  "name": "arduino_kxr94-2050",
+  "version": "1.0.0",
+  "description": "A sketch for reading data from [KXR94-2050](http://akizukidenshi.com/catalog/g/gM-05153/) using Aruduino",
+  "main": "main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "mocha test/test_*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kzmssk/arduino_kxr94-2050.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kzmssk/arduino_kxr94-2050/issues"
+  },
+  "homepage": "https://github.com/kzmssk/arduino_kxr94-2050#readme",
+  "dependencies": {
+    "@serialport/parser-readline": "^2.0.2",
+    "browsify": "0.0.4",
+    "electron": "^5.0.3",
+    "electron-rebuild": "^1.8.5",
+    "mocha": "^6.1.4",
+    "paper": "^0.12.1",
+    "serialport": "^7.1.5"
+  }
+}
